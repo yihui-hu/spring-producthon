@@ -1,0 +1,457 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  background-color: #00381e;
+  font-family: "Epilogue Variable", sans-serif;
+}
+
+body * {
+  color: #dbebe2;
+}
+
+.Container {
+  position: relative;
+  margin-inline: 130px;
+  margin-block: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+  z-index: 2;
+}
+
+.ProducthonBg {
+  position: fixed;
+  top: 24;
+  left: 24vw;
+  z-index: 1;
+}
+
+.NavbarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavbarLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.HeroDate {
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.HeroTitle {
+  font-size: 3em;
+  line-height: 1.2;
+  padding-block: 0.2em;
+}
+
+.HeroDescription {
+  font-weight: 300;
+  font-size: 1.5em;
+  width: 500px;
+}
+
+.CountdownContainer {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.CountdownContainer h4 {
+  text-align: center;
+  font-size: 2em;
+  padding-bottom: 24px;
+}
+
+.TimeWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 72px;
+}
+
+.TimeContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.TimeValue {
+  display: grid;
+  place-items: center;
+  font-size: 1.5em;
+  background-color: #1e563c;
+  width: 52px;
+  height: 48px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding-top: 4px;
+}
+
+.TimeUnit {
+  font-size: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.Button {
+  display: inline-block;
+  background-color: #148550;
+  padding-inline: 16px;
+  padding-block: 8px;
+  margin-top: 12px;
+  border-radius: 8px;
+  transition: 0.1s ease;
+}
+
+.Button:hover {
+  background-color: #0d683d;
+}
+
+.MobileNavbarContainer {
+  display: none;
+}
+
+.AboutContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.AboutButton {
+  display: inline-block;
+  padding-inline: 16px;
+  padding-block: 8px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid #148550;
+  transition: 0.1s ease;
+}
+
+.AboutButton:hover {
+  border: 1px solid #0d683d;
+}
+
+.SectionTitle {
+  font-size: 2.4em;
+  font-weight: 500;
+}
+
+.SectionDescription {
+  width: 40vw;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.SectionDescriptionCentered {
+  width: 40vw;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.WhySubcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid #3a8864;
+  border-radius: 8px;
+}
+
+.WhySubcontainerDescription {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.WhySubcontainerHeading {
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.WhyContainer {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+
+.FooterContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.FooterLogos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.FooterTitle {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.FooterSocials {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.FAQWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.FAQContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.FAQItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 30vw;
+  border-radius: 8px;
+}
+
+@media (max-width: 876px) {
+  .Container {
+    margin: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .NavbarContainer {
+    display: none;
+  }
+
+  .ProducthonBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+  }
+
+  .MobileNavbarContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .HeroDate {
+    font-weight: 300;
+    font-size: 1em;
+  }
+
+  .HeroTitle {
+    font-size: 2.2em;
+    line-height: 1.2;
+    padding-block: 0.2em;
+  }
+
+  .HeroDescription {
+    font-weight: 300;
+    font-size: 1.2em;
+    width: 80vw;
+  }
+
+  .CountdownContainer {
+    width: 100%;
+    display: grid;
+    justify-content: left;
+    align-items: left;
+  }
+
+  .CountdownContainer h4 {
+    text-align: left;
+    font-size: 1.2em;
+    padding-bottom: 16px;
+  }
+
+  .TimeWrapper {
+    width: 100%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .TimeContainer {
+    width: 100%;
+    gap: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+  }
+
+  .TimeValue {
+    display: grid;
+    place-items: center;
+    font-size: 1.1em;
+    background-color: #1e563c;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  .TimeUnit {
+    font-size: 1.1em;
+  }
+  
+  .AboutButton {
+    display: inline-block;
+    padding-inline: 16px;
+    padding-block: 8px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border: 1px solid #148550;
+    transition: 0.1s ease;
+  }
+  
+  .AboutButton:hover {
+    border: 1px solid #0d683d;
+  }
+  
+  .SectionTitle {
+    font-size: 1.8em;
+    font-weight: 500;
+  }
+
+  .CenteredText {
+    text-align: center;
+  }
+  
+  .SectionDescription {
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 300;
+  }
+
+  .SectionDescriptionCentered {
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .Grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .FooterContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 24px;
+  }
+
+  .FooterLogos {
+    display: flex;
+    flex-direction: column;
+    align-self: left;
+    gap: 16px;
+  }
+
+  .FAQWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .FAQContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .FAQItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
+.custom-zoom [data-rmiz-modal-overlay="visible"] {
+  background-color: black;
+}
