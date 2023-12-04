@@ -16,7 +16,7 @@ import Footer from "./components/Footer";
 import FAQ from "./components/FAQ";
 
 function App() {
-  const targetDate = new Date(2024, 1, 24);
+  const targetDate = new Date(2024, 1, 23);
   const aboutRef = useRef<null | HTMLDivElement>(null);
   const whyRef = useRef<null | HTMLDivElement>(null);
   const themesRef = useRef<null | HTMLDivElement>(null);
