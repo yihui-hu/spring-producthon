@@ -49,7 +49,7 @@ const Countdown = (props: CountdownProps) => {
   } else {
     return (
       <div className="CountdownContainer">
-        <h4 style={{ fontWeight: 300 }}>Producthon starts in...</h4>
+        <h4 style={{ fontWeight: 300 }}>Application closes in...</h4>
         <ShowCounter
           days={days}
           hours={hours}

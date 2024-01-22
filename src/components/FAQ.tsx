@@ -71,7 +71,7 @@ const FAQ = () => {
           />
           <FAQContainer
             question="When do applications close?"
-            answer="Still TBD but planning to close a week before Producthon starts!"
+            answer="Applications close at 11:59PM, 2/19 Monday."
           />
           <FAQContainer
             question="Do I need to stay up all night for this?"
