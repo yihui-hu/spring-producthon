@@ -8,7 +8,8 @@ const About = () => {
       <div>
         <h3 className="SectionDescription">
           Producthon is a weekend-long design challenge where participants will
-          design an app which solves an important problem in a given space.
+          design an app which solves an important problem in a given space. The
+          event will go from Feb 23 (Fri) 5PM to Feb 25 (Sun) 5PM!
         </h3>
         <br />
         <h3 className="SectionDescription">
